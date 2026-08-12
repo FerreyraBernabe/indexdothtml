@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Bernabé</title>
+    
+    <meta name="description" content="Portfolio de Bernabé, el que sabe">
+
+    <!--Open Graph-->
+    <meta property="og:title" content="Portfolio de Bernabé">
+    <meta property="og:description" content="Hola cómo estás">
+    <meta property="og:image" content="/images/me.png">
+    <meta property="og:image:alt" content="La imagen de la imagen">
+
+    <link rel="alternate" href="https://urlDeMiPaginaEnOtroIdioma/es" hreflang="es-ES">
+    <link rel="canonical" href="htpps://miPagina.com"> <!--Página original-->
+
+
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content= "#09f">
+
+    <link rel="icon" type="image/png" href="/images/me.png">
+
+    <style>
+      body
+      {
+        background: rgb(235, 253, 215);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Portfolio Bernabé</h1>
+    </header>
+    <nav>
+      <a href="#skills">Mis skills</a>
+      <a href="#tec_favoritas">Mis intereses</a>
+      <a href="#proyectos">Mis proyectos</a>
+      <a
+        href="https://soundcloud.com/noidedone/likes"
+        target="_blank"
+        rel="noreferrer"
+      >Canciones favoritas</a>
+    </nav>
+
+    <main>
+
+      <p> Bienvenidos a mi portfolio. A continuación, verán el mayor despliegue de skills del universo. </p>
+
+      <h2 id="skills">Skills</h2>
+      <ul>
+          <li class="list-item">Back-End Developer</li>
+          <li class="list-item">Web Developer</li>
+      </ul>
+
+      <h2>Mi cara</h2>
+      <p>Esta es mi cara. Así luzco ante comentarios que superan mis capacidades cognitivas.</p>
+      <img 
+      id="img_micara"
+      width="250"
+      height="250"
+      title="La foto de mi cara" src="images/me.png" 
+      alt="mi cara cuando">
+      <aside>
+        <header>
+          <h3 id="tec_favoritas">Mis tecnologías favoritas</h3>
+        </header>
+        <ul>
+          <li>C#</li>
+          <li>.NET</li>
+          <li>HTML</li>
+        </ul>
+      </aside>
+      <section>
+        <article>
+          <header>
+            <h4 id="proyectos">Trabajo actual</h4>
+          </header>
+          <p>
+            Actualmente me encuentro trabajando en un sistema de gestión de turnos para una clínica.
+          </p>
+          <footer>
+            <small>Tecnologías utilizadas: C#, EF Core, GitHub</small>
+          </footer>
+        </article>
+      </section>
+
+      <section>
+        <h2>Preguntas frecuentes</h2>
+        <details open>
+          <summary>¿Qué te motiva?</summary>
+          <p>Nada</p>
+        </details>
+        <details>
+          <summary>¿Cuales son tus fortalezas?</summary>
+          <p>Tengo varias</p>
+        </details>  
+        <details>
+          <summary>¿Mejor juego de zombies?</summary>
+          <p>Estaría entre el left 4 dead 2 y el dying light</p>
+        </details>
+        
+      </section>
+
+      <!--Form-->
+      <section> 
+        <h2>Formulario de contacto</h2>
+        <form method="post" action="/">
+          <fieldset>
+            <legend>Información Personal</legend>
+            <label style="display:block;">Nombre:
+              <input type="text" 
+              name="name"
+              placeholder="Tilinaso 3000" required>
+            </label> <!--Label e input en un block-->
+            
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" 
+              id="email" 
+              name="email"
+              placeholder="tilinisa3000@gmailcom">
+            </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Información adicional</legend>
+              <label>
+                Teléfono:
+                <input type="tel" placeholder="386777777" pattern="[0-9]{9}">
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Otros</legend>
+              <div>
+              <datalist id="languages">
+                <option value="C#"></option>
+                <option value="Java"></option>
+                <option value="HTML"></option>
+              </datalist>
+              <label> 
+                ¿Lenguaje top?
+                <input list="languages" name="languages">
+              </label>
+            </div>
+            </fieldset>
+            
+
+            <input type="submit" 
+              value="Enviar contacto">
+
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      Gracias por leer :D
+      <a href="mailto:bernabeferreyra78@gmail.com">Contactate conmigo!</a>
+      <a href="whatsapp://send?text=Hola :D">Envíame un wsp</a>
+    </footer>
+  </body>
+</html>
+
+
