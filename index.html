@@ -44,7 +44,11 @@
       }
       .mi_cara
       {
+        width: 300px;
+        height: 300px;
        background-color: rgba(164, 204, 236, 0.514); 
+       position: relative;
+       box-sizing: content-box;
       }
       .mi_cara h2
       {
@@ -55,9 +59,11 @@
       }
       .mi_cara #img_micara
       {
-        width: 300px;
-        height: 200px;
-        padding-left: 45px;
+        width: 50%;
+        height: 50%;
+        box-sizing:border-box;
+        position:absolute;
+        left: 25%;
       }
       .menu
       {
@@ -121,6 +127,25 @@
   color: rgba(0, 122, 255, 70%);
 }
 
+.overflow-test
+{
+  width: 200px;
+  height: 70px;
+  border: 5px solid black;
+  font-size: 48px;
+  overflow: scroll;
+  text-overflow: ellipsis;
+}
+
+.star-png
+{
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+
+}
     </style>
   </head>
   <body>
@@ -209,6 +234,9 @@
         
       </section>
 
+      <div class="overflow-test">
+        Testeando Overflow. ¿Hasta dónde podés ver?
+      </div>
       <!--Form-->
       <section> 
         <h2>Formulario de contacto</h2>
@@ -259,7 +287,10 @@
         </form>
       </section>
     </main>
-
+    <div> <img class="star-png" 
+      src="images/star.png" 
+      alt="estrella">
+    </div>
     <footer>
       Gracias por leer :D
       <a href="mailto:bernabeferreyra78@gmail.com">Contactate conmigo!</a>
