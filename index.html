@@ -81,7 +81,8 @@
         gap: 8px;
         z-index: 50;
       }
-      .menu::after {
+      .menu::after 
+      {
         content: "";
         position: absolute;
         inset: 0;
@@ -92,60 +93,85 @@
           inset 0 -2px 0 rgba(255, 255, 255, 0.2);
         pointer-events: none;
         z-index: -1;
-}
+      }
 
-.menu a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1 1 0;
-  min-width: 0;
-  color: rgba(255, 255, 255, 90%);
-  text-decoration: none;
-  padding: 10px 6px;
-  border-radius: 999rem;
-  -webkit-tap-highlight-color: transparent;
-  transition:
-    background 0.18s var(--ease-spring),
-    color 0.18s var(--ease-spring),
-    transform 0.18s var(--ease-spring),
-    box-shadow 0.3s ease-in-out;
-}
+      .menu a 
+      {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1 1 0;
+        min-width: 0;
+        color: rgba(255, 255, 255, 90%);
+        text-decoration: none;
+        padding: 10px 6px;
+        border-radius: 999rem;
+        -webkit-tap-highlight-color: transparent;
+        transition:
+          background 0.18s var(--ease-spring),
+          color 0.18s var(--ease-spring),
+          transform 0.18s var(--ease-spring),
+          box-shadow 0.3s ease-in-out;
+      }
 
-.menu a:hover {
-  transition:
-    background 0.18s var(--ease-spring),
-    color 0.18s var(--ease-spring),
-    transform 0.18s var(--ease-spring),
-    box-shadow 0.3s ease-in-out;
-  background-color: rgba(255, 255, 255, 30%);
-  box-shadow:
-    inset 2px 2px 5px -2px rgba(255, 255, 255, 0.4),
-    inset -2px -1px 5px 0 rgba(255, 255, 255, 0.4),
-    inset 0 -2px 0 rgba(255, 255, 255, 0.2);
-  transform: rotate(2.2);
-  color: rgba(0, 122, 255, 70%);
-}
+      .menu a:hover 
+      {
+        transition:
+          background 0.18s var(--ease-spring),
+          color 0.18s var(--ease-spring),
+          transform 0.18s var(--ease-spring),
+          box-shadow 0.3s ease-in-out;
+        background-color: rgba(255, 255, 255, 30%);
+        box-shadow:
+          inset 2px 2px 5px -2px rgba(255, 255, 255, 0.4),
+          inset -2px -1px 5px 0 rgba(255, 255, 255, 0.4),
+          inset 0 -2px 0 rgba(255, 255, 255, 0.2);
+        transform: rotate(2.2);
+        color: rgba(0, 122, 255, 70%);
+      }
 
-.overflow-test
-{
-  width: 200px;
-  height: 70px;
-  border: 5px solid black;
-  font-size: 48px;
-  overflow: scroll;
-  text-overflow: ellipsis;
-}
+      .overflow-test
+      {
+        width: 200px;
+        height: 70px;
+        border: 5px solid black;
+        font-size: 48px;
+        overflow: scroll;
+        text-overflow: ellipsis;
+      }
 
-.star-png
-{
-  width: 30px;
-  height: 30px;
-  position: fixed;
-  right: 0;
-  bottom: 0;
+      .star-png
+      {
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        right: 0;
+        bottom: 0;
 
-}
+      }
+      .cards-section
+      {
+        width: 250px;
+        height: 150px ;
+        border: 4px solid purple  ;
+        background-color: #77bae7;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2px
+      }
+      .cards-section .card
+      {
+        border: 2px solid black;
+        background-color: gold;
+        width: 40px;
+        height: 80px;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 1;
+      }
     </style>
   </head>
   <body>
@@ -237,6 +263,16 @@
       <div class="overflow-test">
         Testeando Overflow. ¿Hasta dónde podés ver?
       </div>
+
+      <section class="cards-section">
+        <div class="card">Tarjeta 1</div>
+        <div class="card">Tarjeta 2</div>
+        <div class="card">Tarjeta 3</div>
+        <div class="card">Tarjeta 4</div>
+        <div class="card">Tarjeta 5</div>
+        <div class="card">Tarjeta 6</div>
+      </section>
+
       <!--Form-->
       <section> 
         <h2>Formulario de contacto</h2>
@@ -298,5 +334,4 @@
     </footer>
   </body>
 </html>
-
 
